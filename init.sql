@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS appname;
+
+USE appname;
+
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT PRIMARY KEY,
+  name VARCHAR(255)
+);
+
+INSERT INTO users (id, name)
+VALUES (1, 'Bob');
